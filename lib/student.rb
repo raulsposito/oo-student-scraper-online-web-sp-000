@@ -9,7 +9,6 @@ class Student
       self.send("#{attribute}=, value")
     end
     @@all << self
-      
   end
 
   def self.create_from_collection(students_array)
