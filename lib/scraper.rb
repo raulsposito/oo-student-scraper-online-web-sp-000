@@ -30,7 +30,8 @@ class Scraper
         student[:twitter] = link
       else 
         student[:blog] = link
-        
+      end
+      
     
     profile_page = Nokogiri::HTML(open(profile_url))
     profile = []
