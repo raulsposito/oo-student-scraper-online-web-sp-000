@@ -26,9 +26,7 @@ class Scraper
         student[:linkedin] = link 
       elsif link.include?("github")
         student[:github] = link 
-      elsif link.include?("blog")
-        student[:blog] = link
-        
+      elsif link.include?("twitter"
     
     profile_page = Nokogiri::HTML(open(profile_url))
     profile = []
