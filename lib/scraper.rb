@@ -21,6 +21,7 @@ class Scraper
     students = {}
     profile_page = Nokogiri::HTML(open(profile_slug))
     links = profile_page.css(".social-icon-container").children.css("a").map { |el| el.attribute('href').value}
+    links
     
     profile_page = Nokogiri::HTML(open(profile_url))
     profile = []
